@@ -1,29 +1,27 @@
 <?php
 
 class Cilinder extends Figuur {
-    
 
-        public function __construct(float $IH, float $Ir) {
-            parent::__construct($IH, $Ir);
+        public function __construct(float $Ih, float $Ir) {
+            parent::__construct($Ih, $Ir);
         }
 
         public function getH(){
-            return $this->$y;
+            return $this->$x;
         }
         
         public function getR(){
-            return $this->$x;
+            return $this->$y;
         }
 
         public function berekenOppervlakte(){
-            $oppTweeCirkels = * parent::$PI * $this->getR() $this->getR();
+            $oppTweeCirkels = 2 * parent::$PI * $this->getR() * $this->getR();
 
-
-            $oppvlakteBuis = * parent::$PI * $this->getR() $this->getR();
+            $oppvlakteBuis = 2 * parent::$PI * $this->getR() * $this->getH();
             
-            $oppvlakteCillinder =$oppTweeCirkels + $oppTweeCirkels;
+            $oppvlakteCillinder = $oppTweeCirkels + $oppTweeCirkels;
 
-            return $oppvlakteCillinder
+            return $oppvlakteCillinder;
         }        
 }
 ?>

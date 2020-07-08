@@ -7,7 +7,7 @@ class Vierkant extends Figuur{
     }
 
     public function getX(){
-        return $this->$x;
+        return $this->x;
     }
 
     public function berekenOppervlakte(){
